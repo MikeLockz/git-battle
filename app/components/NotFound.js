@@ -1,4 +1,4 @@
-var React = require('react');
+import React from 'react';
 
 function NotFound () {
     return(
@@ -6,4 +6,4 @@ function NotFound () {
     ) 
 }
 
-module.exports = NotFound;
+export default NotFound;

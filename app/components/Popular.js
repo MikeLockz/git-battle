@@ -1,8 +1,7 @@
-const React = require('react');
-const PropTypes = require('prop-types');
-const api = require('../utils/api');
-const Loading = require('./Loading');
-
+import React from 'react';
+import PropTypes from 'prop-types';
+import { fetchPopularRepos } from '../utils/api';
+import Loading from './Loading';
 
 // Stateless component
 function SelectLanguage ({ selectedLanguage, onSelect }) {
@@ -83,7 +82,7 @@ class Popular extends React.Component {
             repos: null
         }));
 
-        api.fetchPopularRepos(lang)
+        fetchPopularRepos(lang)
             .then((repos) => this.setState(() => ({ repos })));
     }
 
@@ -107,4 +106,4 @@ class Popular extends React.Component {
     }
 }
 
-module.exports = Popular;
+export default Popular;
