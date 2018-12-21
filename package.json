@@ -19,6 +19,7 @@
   "author": "Mike Lockwitz",
   "license": "ISC",
   "dependencies": {
+    "@babel/polyfill": "^7.2.3",
     "axios": "^0.18.0",
     "query-string": "^6.2.0",
     "react": "^16.6.1",
